@@ -6,11 +6,13 @@ Si es mayor debe imprimir "El número es mayor a 10".
 Si es menor debe imprimir "El número es menor o igual a 10".
 */
 
-const num1 = prompt('Digite un npumero: ')
+const num1 = prompt('Digite un número: ')
 console.log(num1)
 
-if(num1 >10){
+if(num1 > 10){
     console.log( "El número es mayor a 10")
-}else{
+}else if (num1 <= 10) {
     console.log("El número es menor o igual a 10")
+}else{
+    console.log("Unknown value")
 }

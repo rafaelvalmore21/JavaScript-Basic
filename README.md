@@ -16,12 +16,13 @@
 
 <details><summary>Día 2</summary>
 
-* Lógica booleana y Condicionales
-    - Opeadores
+**<details><summary>Lógica booleana y Condicionales</summary>**
+
+* Opeadores
     - if - else
         ```
         const num = 8;
-        if (num < 10) {`<br>
+        if (num < 10) {
             console.log("El número es menor a 10");
         } else {
         if (num > 10) {
@@ -31,17 +32,19 @@
         }
         }
         ```
-    - Switch - case
-    ```
-    ```
-    - Ternario
-        ```
-        <condición> ? <expr1> : <expr2>
+        - Switch - case
         ```
         ```
-        const num = 10;
-        num >= 15 ? console.log('Es mayor o igual que 15') : console.log('Es menor que 15');
-        ```
+        - Ternario
+            ```
+            <condición> ? <expr1> : <expr2>
+            ```
+            ```
+            const num = 10;
+            num >= 15 ? console.log('Es mayor o igual que 15') : console.log('Es menor que 15');
+            ```
+</details>
+<br>
 
 ### Ejercicio 6
 
@@ -53,10 +56,13 @@ Si es menor debe imprimir "El número es menor o igual a 10".
 ```
 const num1 = prompt('Digite un número: ')
 console.log(num1)
-if(num1 >10){
+
+if(num1 > 10){
     console.log( "El número es mayor a 10")
-}else{
+}else if (num1 <= 10) {
     console.log("El número es menor o igual a 10")
+}else{
+    console.log("Unknown value")
 }
 ```
 
@@ -67,8 +73,11 @@ trate de adivinar. Si el número es correcto debe imprimir en la consola "Felici
 de lo contrario debe imprimir "Lo siento, intenta nuevamente!"
 ```
 const numberDinamyc = Math.floor((Math.random() * 10 ) + 1);
+
 console.log('Número dinámico: ' + numberDinamyc);
+
 const numberProposal = prompt('Ingrese un número entre 1 y 10: ')
+
 if (numberProposal < 1 || numberProposal > 10) {
     console.log('Número ingresado no valido')
 }else if (numberProposal == numberDinamyc) {
@@ -105,6 +114,7 @@ Si el número es igual a 10 debe imprimir "El número es igual a 10".
 
 ```
 const numberProposal = prompt('Ingrese un número: ')
+
 if (numberProposal < 10) {
     console.log('El número es menor que 10')
 } else if (numberProposal > 10) {
@@ -171,6 +181,23 @@ if (numberProposal % 3 == 0 && numberProposal % 5 == 0) {
 </details>
 
 <details><summary>Día 3</summary>
+
+**<details><summary>Bucles</summary>**
+* for 
+* for ... of
+* while
+    ```
+    const names = [Pia', 'German', 'Rafael']
+
+    let index = 0;
+    while (index < names.length){
+        const name = names[index];
+        console.log(name);
+        index++;
+    }
+    ```
+
+</details>
 
 </details>
 

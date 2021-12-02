@@ -5,7 +5,9 @@ de lo contrario debe imprimir "Lo siento, intenta nuevamente!"
 */
 const numberDinamyc = Math.floor((Math.random() * 10 ) + 1);
 console.log('Número dinámico: ' + numberDinamyc);
+
 const numberProposal = prompt('Ingrese un número entre 1 y 10: ')
+
 if (numberProposal < 1 || numberProposal > 10) {
     console.log('Número ingresado no valido')
 }else if (numberProposal == numberDinamyc) {
